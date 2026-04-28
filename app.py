@@ -9,6 +9,7 @@ st.set_page_config(page_title="Fuel Efficiency Predictor", page_icon="🚗")
 
 # Load model
 model = load_model("model.keras", compile=False)
+
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
 # Title
