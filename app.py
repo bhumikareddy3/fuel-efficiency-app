@@ -3,11 +3,12 @@ import numpy as np
 import pickle
 from tensorflow.keras.models import load_model
 
+
 # Page config
 st.set_page_config(page_title="Fuel Efficiency Predictor", page_icon="🚗")
 
 # Load model
-model = load_model("model.keras")
+model = load_model("model.keras", compile=False)
 scaler = pickle.load(open("scaler.pkl", "rb"))
 
 # Title
